@@ -1,12 +1,14 @@
 ## PHASE 4 WEEK 2 SUPER HEROES CHALLENGE
 
-This is an api for storing superhero names, hero names and the kind of superpowers they have. This application has been deployed on Render and is available through the following link:
-
+This is an api for storing superhero names, hero names and the kind of superpowers they have. This application has been deployed on Render and is available through the following links: 
+* To view Powers: https://superheroes-mr37.onrender.com/power
+* To view Heroes: https://superheroes-mr37.onrender.com/heros
+* To view Hero Powers: https://superheroes-mr37.onrender.com/hero_powers
 
 ## Application Behaviour(BDD)
 The client using the application should be able to:
 
-1. Get a list of all the heroes currently in the database using GET method through the route /heroes
+1. Get a list of all the heroes currently in the database using GET method through the route /heros
 2. Get a specific hero using GET and the route /heroes/:id
     - if the hero is not found return the following: { "error": "Hero not found" }, status:404
 3. Get the powers currently in the databse using GET through the route /powers
