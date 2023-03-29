@@ -7,6 +7,8 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 #loops 15 times and generates 15 random super_powers
+puts 'seeding' 
+
 15.times do
     hero_power = HeroPower.create(
         power_id: rand(1..5),
@@ -25,9 +27,11 @@
   end
 
 # generating 15 random heroes
+
 15.times do
     hero = Hero.create(
         name: Faker::Superhero.name,
         super_name: Faker::Superhero.descriptor
     )
   end
+puts 'completed seeding'
