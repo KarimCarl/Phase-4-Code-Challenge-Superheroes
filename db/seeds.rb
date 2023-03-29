@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+#loops 15 times and generates 15 random super_powers
+15.times do
+    hero_power = HeroPower.create(
+        power_id: rand(1..5),
+        hero_id: rand(1..10),
+        strength: ['strong', 'weak', 'average'].sample,
+  
+    )
+  end
