@@ -23,3 +23,11 @@
       description: Faker::Lorem.sentence
     )
   end
+
+# generating 15 random heroes
+15.times do
+    hero = Hero.create(
+        name: Faker::Superhero.name,
+        super_name: Faker::Superhero.descriptor
+    )
+  end
