@@ -15,3 +15,11 @@
   
     )
   end
+
+#generates 15 random powers
+15.times do
+    power = Power.create(
+      name: Faker::Superhero.power,
+      description: Faker::Lorem.sentence
+    )
+  end
